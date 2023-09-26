@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- main.main>.container>(.textcontainer>h1.header+p.desc+(ul.salepoint>li*3)+(form.subemail>label+input:email+input:submit))+(.imgcontainer>img) -->
+    <main class="main">
+      <!-- I have noticed the Frontend Mentor Accessibility checker
+      wants me to wrap everything inside a <main> or <section class="main">
+        I suppose this is for screenreaders. -->
+      <div class="textcontainer">
+        <h1 class="header">Stay updated!</h1>
+        <p class="desc">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="salepoint">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <!-- This could be done more efficiently with three p with an IMG fist.
+          This is funnier. -->
+        <form class="subemail" action="">
+          <label for="EEmailfield">Email address</label>
+          <input
+            type="email"
+            name=""
+            id="Emailfield"
+            placeholder="email@company.com"
+          /><input
+            type="submit"
+            id="subbtn"
+            value="Subscribe to monthly newsletter"
+          />
+        </form>
+      </div>
+      <div class="imgcontainer">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    </main>
+    <!-- Sign-up form start -->
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
+
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/JohnB08">JohnB08</a>.
+    </div>
+  </body>
+</html>
