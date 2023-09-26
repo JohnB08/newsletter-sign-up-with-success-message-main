@@ -21,12 +21,13 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
 
+    <script src="index.js" defer></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- main.main>.container>(.textcontainer>h1.header+p.desc+(ul.salepoint>li*3)+(form.subemail>label+input:email+input:submit))+(.imgcontainer>img) -->
-    <main class="main">
+    <main class="main" id="maincontent">
       <!-- I have noticed the Frontend Mentor Accessibility checker
       wants me to wrap everything inside a <main> or <section class="main">
         I suppose this is for screenreaders. -->
@@ -51,13 +52,23 @@
             placeholder="email@company.com"
           /><input
             type="submit"
+            class="subbtn"
             id="subbtn"
             value="Subscribe to monthly newsletter"
           />
         </form>
       </div>
       <div class="imgcontainer">
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <img
+          id="img1"
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="styilized forms on a red background"
+        />
+        <img
+          id="img2"
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
       </div>
     </main>
     <!-- Sign-up form start -->
@@ -65,10 +76,24 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
+    <section class="submitted" id="submitpage" style="display: none">
+      <div class="textcontainer">
+        <img src="./assets/images/icon-success.svg" alt="success" />
+        <h1 class="header">Thanks for Subscribing</h1>
+        <p class="desc">
+          A confirmation email has been sent to
+          <span id="email">ash@loremcompany.com</span>. Please open it and click
+          the button inside to confirm your subscription.
+        </p>
+        <input
+          type="button"
+          class="subbtn"
+          id="dismissbtn"
+          value="Dismiss message"
+        />
+      </div>
+    </section>
+    <!-- Thanks for subscribing! ADismiss message -->
 
     <!-- Success message end -->
 
