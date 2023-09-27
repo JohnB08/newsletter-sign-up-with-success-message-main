@@ -104,6 +104,7 @@ fun challenge using ::before. */
   background: hsl(234, 29%, 20%);
   color: white;
   font-family: inherit;
+  font-weight: bold;
   border-radius: 0.5em;
 }
 .subbtn:hover,
