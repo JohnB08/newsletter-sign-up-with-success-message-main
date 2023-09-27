@@ -74,9 +74,15 @@ body {
   gap: 0.5em;
   width: 100%;
 }
-.subemail label {
+.subemail .sub-error {
   font-size: 0.75em;
   font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.subemail .sub-error p {
+  color: hsl(4, 100%, 67%);
 }
 .subemail input,
 #dismissbtn {
@@ -96,6 +102,14 @@ body {
   color: white;
   font-family: inherit;
   border-radius: 0.5em;
+}
+.subbtn:hover,
+#dismissbtn:hover {
+  background: linear-gradient(to right, hsl(4, 100%, 67%), yellow);
+  box-shadow: 0 1em 1em hsl(4, 100%, 67%);
+}
+#emailinput {
+  font-weight: bold;
 }
 .attribution {
   margin: 1em auto;
@@ -135,6 +149,13 @@ body {
     grid-area: 2/1/3/2;
     padding-left: 2.5em;
     gap: 1em;
+  }
+  .submitted {
+    height: 100vh;
+    border-radius: 0;
+  }
+  .submitted .textcontainer .desc {
+    margin: 0 0 auto 0;
   }
 }
 @media only screen and (max-width: 480px) {

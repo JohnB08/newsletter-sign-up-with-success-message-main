@@ -43,11 +43,16 @@
         </ul>
         <!-- This could be done more efficiently with three p with an IMG fist.
           This is funnier. -->
-        <form class="subemail" action="">
-          <label for="EEmailfield">Email address</label>
+        <form class="subemail" action="#">
+          <div class="sub-error">
+            <label for="Emailfield">Email address</label>
+            <p class="error" style="display: none" id="error">
+              valid email required
+            </p>
+          </div>
           <input
             type="email"
-            name=""
+            name="Emailfield"
             id="Emailfield"
             placeholder="email@company.com"
           /><input
@@ -82,8 +87,8 @@
         <h1 class="header">Thanks for Subscribing</h1>
         <p class="desc">
           A confirmation email has been sent to
-          <span id="email">ash@loremcompany.com</span>. Please open it and click
-          the button inside to confirm your subscription.
+          <span id="emailinput">ash@loremcompany.com</span>. Please open it and
+          click the button inside to confirm your subscription.
         </p>
         <input
           type="button"
