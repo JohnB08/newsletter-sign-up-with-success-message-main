@@ -45,6 +45,8 @@
           This is funnier. -->
         <form class="subemail" action="#">
           <div class="sub-error">
+            <!-- Making this a separate Div was the cleanest way
+            I found to get the error to show -->
             <label for="Emailfield">Email address</label>
             <p class="error" style="display: none" id="error">
               valid email required
@@ -61,6 +63,9 @@
             id="subbtn"
             value="Subscribe to monthly newsletter"
           />
+          <!-- Using a submit here, refreshes the page because it wants
+          to post the form somewhere. I'm not smart enough at JS yet to make this work.
+        My workaround for now is just using a button. -->
         </form>
       </div>
       <div class="imgcontainer">
@@ -76,11 +81,8 @@
         />
       </div>
     </main>
-    <!-- Sign-up form start -->
 
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
+    <!-- This is the success message div -->
     <section class="submitted" id="submitpage" style="display: none">
       <div class="textcontainer">
         <img src="./assets/images/icon-success.svg" alt="success" />
@@ -98,9 +100,6 @@
         />
       </div>
     </section>
-    <!-- Thanks for subscribing! ADismiss message -->
-
-    <!-- Success message end -->
 
     <div class="attribution">
       Challenge by
