@@ -90,12 +90,13 @@ fun challenge using ::before. */
 .subemail input,
 #dismissbtn {
   width: 100%;
-  padding: 1.25em;
+  padding: 1em;
   margin-bottom: 1em;
+  font-size: 1.1em;
 }
 #Emailfield {
   font-family: inherit;
-  opacity: 0.6;
+  opacity: 0.75;
   border: 0.2em solid hsla(231, 7%, 60%, 0.8);
   border-radius: 0.5em;
 }
